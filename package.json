@@ -1,0 +1,35 @@
+{
+  "name": "movie-magic-jan-2025",
+  "version": "1.0.0",
+  "description": "JS Back-End Workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+//github.com/StiliyanZakov/movie-magic-jan-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/StiliyanZakov/movie-magic-jan-2025/issues"
+  },
+  "homepage": "https://github.com/StiliyanZakov/movie-magic-jan-2025#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5"
+  }
+}
