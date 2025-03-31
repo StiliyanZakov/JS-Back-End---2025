@@ -1,0 +1,145 @@
+/* Light Theme */
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #05c4cb, #930b0b);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+.calculator.dark {
+    background: linear-gradient(135deg, #1e1e1e, #4b4b4b);
+    color: #fff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.theme-toggle:hover {
+    background-color: #ff9900;
+}
+
+/* Display Input */
+input {
+    width: 100%;
+    padding: 15px 10px 15px 15px; /* Add more left padding */
+    font-size: 28px;
+    margin: 0 0 15px 0; /* Move slightly to the left */
+    display: block;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Calculator Buttons */
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+    font-weight: bold;
+}
+
+/* Number Buttons */
+button:not(.clear):not([data-operator]):not(.theme-toggle):not(.backspace) {
+    background-color: #4caf50;
+}
+
+button:not(.clear):not([data-operator]):hover {
+    background-color: #45a049;
+}
+
+/* Operator Buttons */
+button[data-operator] {
+    background-color: #ff9800;
+}
+
+button[data-operator]:hover {
+    background-color: #e68a00;
+}
+
+/* Backspace Button */
+.backspace {
+    background-color: #ff5722;
+}
+
+.backspace:hover {
+    background-color: #e64a19;
+}
+
+/* Equal Button */
+button.equal {
+    background-color: #2196f3;
+}
+
+button.equal:hover {
+    background-color: #1976d2;
+}
+
+/* Clear Button */
+.clear {
+    background-color: #f44336;
+    grid-column: span 4;
+}
+
+.clear:hover {
+    background-color: #d32f2f;
+}
+
+/* History Section */
+.history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.history h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history ul {
+    padding: 0;
+    list-style: none;
+}
+
+.history li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    word-break: break-all;
+}
